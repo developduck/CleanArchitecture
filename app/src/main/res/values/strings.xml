@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">CleanArchitecture</string>
+
+    <!-- Common -->
+    <string name="common_search">Search</string>
+
+    <!-- Title -->
+    <string name="action_bar_title_main">Example App</string>
+    <string name="action_bar_title_search">User Search</string>
+    <string name="action_bar_title_detail">User Detail</string>
+    
+    <!-- Message -->
+    <string name="hint_please_enter_the_maximum_age">Please enter the maximum age</string>
+
+    <!-- Menu -->
+    <string name="menu_sample_01">Sample Menu 01</string>
+    <string name="menu_sample_02">Sample Menu 02</string>
+</resources>

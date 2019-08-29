@@ -1,0 +1,61 @@
+package com.example.cleanarchitecture.task.search.domain.usecase;
+
+import android.support.annotation.NonNull;
+
+import com.example.cleanarchitecture.data.model.Model;
+import com.example.cleanarchitecture.data.source.UsersDataSource;
+import com.example.cleanarchitecture.data.source.UsersRepository;
+import com.example.cleanarchitecture.task.UseCase;
+
+import java.util.List;
+
+/**
+ * Created by Hwang on 2018-03-27.
+ *
+ * Description :
+ */
+//public class GetSearchedUsers extends UseCase<GetSearchedUsers.RequestValue, GetSearchedUsers.ResponseValue> {
+//    private UsersDataSource repository;
+//
+//    public GetSearchedUsers(@NonNull UsersRepository repository) {
+//        this.repository = repository;
+//    }
+//
+//    @Override
+//    protected void execute(RequestValue requestValue) {
+//        repository.getSearchedUsers(requestValue.getAge(), new OnResponseListener<List<Model.User>>() {
+//            @Override
+//            public void onSuccess(List<Model.User> data) {
+//                if (data != null) {
+//                    ResponseValue responseValue = new ResponseValue(data);
+//                    getOnResponseListener().onSuccess(responseValue);
+//                }
+//            }
+//            @Override
+//            public void onError(int code, String message) {
+//                getOnResponseListener().onError(code, message);
+//            }
+//        });
+//    }
+//
+//    public static class RequestValue implements UseCase.RequestValue {
+//        private int age;
+//
+//        public RequestValue(int age) {
+//            this.age = age;
+//        }
+//        public int getAge() {
+//            return age;
+//        }
+//    }
+//    public static class ResponseValue implements UseCase.ResponseValue {
+//        private List<Model.User> users;
+//
+//        public ResponseValue(@NonNull List<Model.User> users) {
+//            this.users = users;
+//        }
+//        public List<Model.User> getUsers() {
+//            return users;
+//        }
+//    }
+//}

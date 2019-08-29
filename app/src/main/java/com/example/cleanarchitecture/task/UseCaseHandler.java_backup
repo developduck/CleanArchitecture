@@ -1,0 +1,70 @@
+package com.example.cleanarchitecture.task;
+
+import com.example.cleanarchitecture.common.EspressoIdlingResource;
+
+/**
+ * Created by Hwang on 2018-03-23.
+ *
+ * Description :
+ */
+//public class UseCaseHandler {
+//    private static UseCaseHandler instance;
+//    private final UseCaseScheduler scheduler;
+//
+//    private UseCaseHandler(UseCaseScheduler scheduler) {
+//        this.scheduler = scheduler;
+//    }
+//    public synchronized static UseCaseHandler getInstance() {
+//        return getInstance(new UseCaseThreadPoolScheduler());
+//    }
+//    public synchronized static UseCaseHandler getInstance(UseCaseScheduler scheduler) {
+//        if (instance == null) {
+//            instance = new UseCaseHandler(scheduler);
+//        }
+//        return instance;
+//    }
+//
+//    public <REQ extends UseCase.RequestValue, RES extends UseCase.ResponseValue> void execute(
+//            UseCase<REQ, RES> useCase, REQ requestValue, UseCase.OnResponseListener<RES> onResponse) {
+//        useCase.setRequestValue(requestValue);
+//        if (onResponse != null) {
+//            useCase.setOnResponseListener(new OnDefaultResponseListener<>(onResponse, this));
+//        }
+//
+//        EspressoIdlingResource.increment();
+//
+//        scheduler.execute(() -> {
+//            useCase.run();
+//            if (!EspressoIdlingResource.getIdlingResource().isIdleNow()) {
+//                EspressoIdlingResource.decrement();
+//            }
+//        });
+//    }
+//
+//    private <RES extends UseCase.ResponseValue> void notifyResponse(RES response, UseCase.OnResponseListener<RES> onResponse) {
+//        scheduler.notifyResponse(response, onResponse);
+//    }
+//    private <RES extends UseCase.ResponseValue> void onError(int code, String message, UseCase.OnResponseListener<RES> onResponse) {
+//        scheduler.onError(code, message, onResponse);
+//    }
+//
+//    private static final class OnDefaultResponseListener<RES extends UseCase.ResponseValue>
+//            implements UseCase.OnResponseListener<RES> {
+//        private final UseCase.OnResponseListener<RES> onResponse;
+//        private final UseCaseHandler useCaseHandler;
+//
+//        private OnDefaultResponseListener(UseCase.OnResponseListener<RES> onResponse, UseCaseHandler useCaseHandler) {
+//            this.onResponse = onResponse;
+//            this.useCaseHandler = useCaseHandler;
+//        }
+//
+//        @Override
+//        public void onSuccess(RES data) {
+//            useCaseHandler.notifyResponse(data, onResponse);
+//        }
+//        @Override
+//        public void onError(int code, String message) {
+//            useCaseHandler.onError(code, message, onResponse);
+//        }
+//    }
+//}

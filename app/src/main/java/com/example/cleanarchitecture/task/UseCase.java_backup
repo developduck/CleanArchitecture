@@ -1,0 +1,33 @@
+package com.example.cleanarchitecture.task;
+
+/**
+ * Created by Hwang on 2018-03-23.
+ *
+ * Description :
+ */
+//public abstract class UseCase<REQ extends UseCase.RequestValue, RES extends UseCase.ResponseValue> {
+//    private REQ requestValue;
+//    private OnResponseListener<RES> onResponse;
+//
+//    public void setRequestValue(REQ requestValue) {
+//        this.requestValue = requestValue;
+//    }
+//    public void setOnResponseListener(OnResponseListener<RES> onResponse) {
+//        this.onResponse = onResponse;
+//    }
+//    public OnResponseListener<RES> getOnResponseListener() {
+//        return onResponse;
+//    }
+//
+//    public void run() {
+//        execute(requestValue);
+//    }
+//    protected abstract void execute(REQ requestValue);
+//
+//    public interface RequestValue {}
+//    public interface ResponseValue {}
+//    public interface OnResponseListener<D> {
+//        void onSuccess(D data);
+//        void onError(int code, String message);
+//    }
+//}

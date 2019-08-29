@@ -1,0 +1,12 @@
+package com.example.cleanarchitecture.task;
+
+/**
+ * Created by Hwang on 2018-03-23.
+ *
+ * Description :
+ */
+//public interface UseCaseScheduler {
+//    void execute(Runnable runnable);
+//    <REQ extends UseCase.ResponseValue> void notifyResponse(REQ response, UseCase.OnResponseListener<REQ> onResponse);
+//    <REQ extends UseCase.ResponseValue> void onError(int code, String message, UseCase.OnResponseListener<REQ> onResponse);
+//}

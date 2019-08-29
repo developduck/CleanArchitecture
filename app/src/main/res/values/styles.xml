@@ -1,0 +1,18 @@
+<resources>
+    <!-- Application Theme. -->
+    <style name="app_theme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+        <item name="android:buttonStyle">@style/default_button</item>
+    </style>
+
+    <style name="toolbar" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <!-- Default Style -->
+    <style name="default_button" parent="Widget.AppCompat.Button">
+        <item name="android:textAllCaps">false</item>
+    </style>
+</resources>

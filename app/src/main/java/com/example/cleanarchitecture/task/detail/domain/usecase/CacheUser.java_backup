@@ -1,0 +1,35 @@
+package com.example.cleanarchitecture.task.detail.domain.usecase;
+
+import com.example.cleanarchitecture.data.model.Model;
+import com.example.cleanarchitecture.data.source.UsersDataSource;
+import com.example.cleanarchitecture.data.source.UsersRepository;
+import com.example.cleanarchitecture.task.UseCase;
+
+/**
+ * Created by Hwang on 2018-03-27.
+ *
+ * Description :
+ */
+//public class CacheUser extends UseCase<CacheUser.RequestValue, UseCase.ResponseValue> {
+//    private UsersDataSource repository;
+//
+//    public CacheUser(UsersRepository repository) {
+//        this.repository = repository;
+//    }
+//
+//    @Override
+//    protected void execute(RequestValue requestValue) {
+//        repository.cacheUsers(requestValue.getUser());
+//    }
+//
+//    public static class RequestValue implements UseCase.RequestValue {
+//        private final Model.User user;
+//
+//        public RequestValue(Model.User user) {
+//            this.user = user;
+//        }
+//        public Model.User getUser() {
+//            return user;
+//        }
+//    }
+//}
